@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="StudentMasterPage.master.cs" Inherits="StudentMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Stylesheet/style2.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div id="container">
+        <div id="header">
+           <h1>OeS</h1>
+        </div><!--end of header -->
+
+        
+            <div id="navigation">
+                <ul>
+                    <li><a href="MyProfile.aspx">My Profile</a>
+                    </li>
+                        <ul>
+                            <li><a href="ChangePasswordStudent.aspx">Change Password</a></li>
+                        </ul>
+                    <li><a href="Exam.aspx">Exam</a></li>
+                    <li><a href="Student.aspx">Logout</a></li>
+                </ul>
+            </div><!-- end of naviagaion -->
+            
+            <div style="text-align:right;">
+                <span class="style1">Currently logged in as:</span>
+                <asp:Label 
+                    ID="lblWelcome" runat="server" style="color: #FF6600; font-weight: 700;"></asp:Label>
+            </div><!-- user Status-->
+            <div id="content" style="padding:20px;">
+                        
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    
+                </asp:ContentPlaceHolder>
+                        
+            </div><!-- end of content -->
+
+       <div style="clear:both;"></div>
+         
+    </div><!--end of container -->
+    <div id="footer">
+            <p>&copy;Copy Right 2014. All Right Reserved <a href="#">Prakash Tamang</a></p>
+         </div><!--end of footer-->
+    </form>
+</body>
+</html>

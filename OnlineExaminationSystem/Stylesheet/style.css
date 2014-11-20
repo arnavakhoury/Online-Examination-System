@@ -1,0 +1,124 @@
+﻿body   
+{
+    background: #b6b7bc;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    color: #FFFFFF;
+    }
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: medium;
+    text-align:justify;
+    }
+    
+/********** HEADINGS **********/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1
+{
+    text-align: center;
+    color: #FFFFFF;
+    line-height:100px;
+    font-size: xx-large;
+    font-weight:bold;
+    }
+
+/**** Container *********/
+#container
+{
+    width:960px;
+    height:800px;
+    margin:50px auto;
+    }
+/**** Header ****/
+#header
+{
+    width:960;
+    height:100px;
+    background-color:#000066;
+    }
+   
+/***** Navigation *********/
+#navigation
+{
+    height:50px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color:#339900;
+    }
+#navigation ul
+{
+    text-align:center;
+    list-style:none;
+    height:50px;
+    }
+#navigation ul li
+{
+    display:inline;
+    float:none;
+    }
+#navigation ul li a
+{
+    text-decoration:none;
+    font-size:18px;
+    color:#fff;
+    line-height:50px;
+    padding:0 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ #navigation ul li a:hover
+ {
+     color:#ff6600;
+     }
+
+/***** Content ****/
+h2
+{
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif
+    }
+
+#content img
+{
+    float:right;
+    margin:5px;
+    }
+    
+/** Footer ***/    
+#footer
+{
+    margin:5px auto;
+    width:960px;
+    height:20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color:#339900;
+    }
+#footer p
+{
+    text-align:center;
+    font-size:14px;
+    line-height:20px;
+    }
+#footer p a
+{
+    color:#fff;
+    text-decoration:none;
+    }
+ #footer p a:hover
+ {
+     text-decoration:underline;
+     }

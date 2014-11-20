@@ -1,0 +1,41 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LoginPage.master.cs" Inherits="LoginPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Stylesheet/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="container">
+        
+        <div id="navigation" style="margin-top:150px;">
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="Student.aspx">Students</a></li>
+                <li><a href="About.aspx">About Us</a></li>
+                <li><a href="ModelQuestion.aspx">Model questions</a></li>
+                <li><a href="UserHelp.aspx">User Help</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>
+            </ul>
+        </div><!--end of navigation -->
+        <div id="content" style="padding:50px 0;background:#fff;">
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+        </div><!--end of content -->
+
+    <div id="footer">
+            <p>&copy;Copy Right 2014. All Right Reserved <a href="#">Prakash Tamang</a></p>
+    </div><!--end of footer-->
+
+    </div><!--end of container-->
+    
+    </form>
+</body>
+</html>
